@@ -271,6 +271,7 @@ article {
     -moz-box-shadow: 3px 3px 1px #888;
     -webkit-box-shadow: 5px 5px 2px #888;
     box-shadow: 3px 3px 1px #888;
+    background-color: white;
 }
 
 article > header {
