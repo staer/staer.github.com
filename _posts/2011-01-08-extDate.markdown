@@ -40,7 +40,7 @@ both functions to near 100% completeness. Using them is as simple as:
 	var theTime = "2010-09-24T14:19:15Z";
 	
 	// Parse and output the date using the Python style strptime() and strftime() methods
-	var commentDate = Date.strptime("%Y-%m-%dT%H:%M:%SZ", true);
+	var commentDate = theTime.strptime("%Y-%m-%dT%H:%M:%SZ", true);
 	var outString = commentDate.strftime("%m/%d/%Y");
 	{% endhighlight %} 
 	
