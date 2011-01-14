@@ -1,0 +1,71 @@
+---
+layout: post
+title: extDate.js - a JavaScript Date extension
+---
+
+While working on my WebOS Groupon&#0153; app, 
+[grpn](http://developer.palm.com/appredirect/?packageid=com.staersoft.grpn), 
+I had to deal with a bit of date parsing from the Groupon&#0153; API as well 
+as some formatted output within the app. Initially for the 1.0 release, I had 
+just done a bunch of substring calls to generate a JavaScript Date instance 
+from a formatted time string and then output the date string in a different 
+format, something like:
+
+    {% highlight javascript %}
+		// A date string pulled from an API call
+		var theTime = "2010-09-24T14:19:15Z";
+		
+		var commentDate = new Date(Date.parse(theTime.substring(0,10)));
+		commentDate.setUTCHours(parseInt(theTime.substring(11,13), 10));
+		commentDate.setUTCMinutes(parseInt(theTime.substring(14,16), 10));
+		
+		// Output the string in some non standard way, the time has been removed for space saving
+		var outString = commentDate.getMonth() + "/" + commentDate.getDate() + "/" + commentDate.getFullYear();  
+	{% endhighlight %}
+	
+After I had done this once or twice I decided it wasn't an optimal solution and 
+did a quick search online to see if there were any good JavaScript date extension
+libraries (WebOS apps are coded in 100% JavaScript so the library had to be in JS). 
+The functionality I really wanted was something similar to Python's
+strptime() and strftime() functions, something I could reuse in my other WebOS
+projects.
+
+After some searching and not finding anything that I really liked I decided to
+implement my own versions of strptime() and strftime() in JavaScript as add-on 
+functions to the built in JavaScript Date object. At this point I have implemented 
+both functions to near 100% completeness. Using them is as simple as:
+
+	{% highlight javascript %}
+	// A date string pulled from an API call
+	var theTime = "2010-09-24T14:19:15Z";
+	
+	// Parse and output the date using the Python style strptime() and strftime() methods
+	var commentDate = Date.strptime("%Y-%m-%dT%H:%M:%SZ", true);
+	var outString = commentDate.strftime("%m/%d/%Y");
+	{% endhighlight %} 
+	
+The code now seems quite a bit cleaner, to me at least. As I said before, the
+extDate.js extensions are a near 100% clone of the Python methods except for a
+few differences:
+
+1.	The time zone directives (%Z) aren't supported in either method. This is 
+because the JavaScript Date object doesn't really track timezones aside from 
+"local" and UTC. Using the directive is a simple "no-op" and will return an 
+empty string.
+
+2. 	Instead of returning strings like "08" for the month of August, the extension
+instead returns "8". This is because a call to JavaScript's parseInt() will 
+mistakenly try to parse "08" as an octal number. To help cut down a bugs down the
+road I felt this was an acceptable functional difference.
+
+3. 	In addition to format strings, each method takes a boolean as it's last 
+argument specifying weather or not the time is in UTC or not (defaulting to not). 
+By specifying "true", the Date object will be populated with "setXXXUTC" calls 
+instead of the normal "setXXX" calls.
+
+That's about it, some helper constants were also added into the library as well
+as the ability to localize certain content such as the names of the months/days.
+Check the README for additional instructions and features not outlined here. 
+Hopefully someone else will find this useful, you can check it out on GitHub at:
+[http://github.com/staer/extDate](http://github.com/staer/extDate).
+	

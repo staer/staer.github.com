@@ -1,9 +1,38 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>staer.github.com</title>
-	</head>
-	<body>
-		<h1>Coming soon...</h1>
-	</body>
-</html>
+---
+layout: base
+title: Home
+---
+
+<section>
+	{% for post in paginator.posts %}
+	<article>
+		<header>
+			<h3><a href="{{ post.url }}">{{ post.title }}</a><h3>
+			<h4>Posted: {{ post.date | date_to_string }}</h4>
+		</header>
+		{{ post.content }}
+		<footer><a href="{{ post.url }}#disqus_thread"></a></footer>
+	</article>
+	{% endfor %}
+</section>
+
+
+{% if paginator.total_pages > 1 %}
+<section id="paginator">
+{% if paginator.previous_page  %}
+	{% if paginator.previous_page == 1 %}
+		<a href="/">
+	{% else %}
+	<a href="/page{{ paginator.previous_page }}">
+	{% endif %}	
+	Previous</a>
+{% endif %} 
+
+Page {{paginator.page}} of {{paginator.total_pages}} 
+
+
+{% if paginator.next_page %}
+	<a href="/page{{paginator.next_page}}">Next</a>
+{% endif %}
+</section>
+{% endif %}
