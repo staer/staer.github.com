@@ -76,7 +76,7 @@
 	<span class='kd'>var</span> <span class='nx'>theTime</span> <span class='o'>=</span> <span class='s2'>&quot;2010-09-24T14:19:15Z&quot;</span><span class='p'>;</span>
 	
 	<span class='c1'>// Parse and output the date using the Python style strptime() and strftime() methods</span>
-	<span class='kd'>var</span> <span class='nx'>commentDate</span> <span class='o'>=</span> <span class='nb'>Date</span><span class='p'>.</span><span class='nx'>strptime</span><span class='p'>(</span><span class='s2'>&quot;%Y-%m-%dT%H:%M:%SZ&quot;</span><span class='p'>,</span> <span class='kc'>true</span><span class='p'>);</span>
+	<span class='kd'>var</span> <span class='nx'>commentDate</span> <span class='o'>=</span> <span class='nx'>theTime</span><span class='p'>.</span><span class='nx'>strptime</span><span class='p'>(</span><span class='s2'>&quot;%Y-%m-%dT%H:%M:%SZ&quot;</span><span class='p'>,</span> <span class='kc'>true</span><span class='p'>);</span>
 	<span class='kd'>var</span> <span class='nx'>outString</span> <span class='o'>=</span> <span class='nx'>commentDate</span><span class='p'>.</span><span class='nx'>strftime</span><span class='p'>(</span><span class='s2'>&quot;%m/%d/%Y&quot;</span><span class='p'>);</span>
 	
 </code></pre>
