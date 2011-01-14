@@ -1,31 +1,31 @@
 ---
 layout: post
-title: grpn 1.2 and 1.3 released
+title: grpn 1.1 and 1.2 released
 ---
 
-I am proud to announce the immediate availability of grpn 1.2 and 1.3, the best 
-(IMHO) Groupon&#0153; client for WebOS. Releases for versions 1.2 and 1.3 came about
+I am proud to announce the immediate availability of grpn 1.1 and 1.2, the best 
+(IMHO) Groupon&#0153; client for WebOS. Releases for versions 1.1 and 1.2 came about
 a week apart so they have been rolled into a single post here. There have been 
 many updates to the app since the 1.0 release several months ago including:
 
 * Sharing via MMS and Email - You can now share the awesome Groupon deals with
 your friends with a tap of your finger. Simply select the "sharing" menu in the
-lower left of the screen and go. (grpn v1.3.0)
+lower left of the screen and go. (grpn v1.2.0)
 
 * Groupon disccusions - You can now read all of the user generated discussion
 points regarding each of the deals by tapping the button in the lower right
-of your screen. (grpn v1.2.0)
+of your screen. (grpn v1.1.0)
 
 * Groupon says - You can now read through all the interesting tidbits of information
 Groupon gives provides their "Groupon Says" bubbles on their website. Simply 
-open the application menu and select "Groupon says..." (grpn v1.2.0)
+open the application menu and select "Groupon says..." (grpn v1.1.0)
 
 * Release notes - You can now read through all of the release notes for each
-new grpn release. Select "release notes" from the application menu. (grpn v1.2.0)
+new grpn release. Select "release notes" from the application menu. (grpn v1.1.0)
 
 * Number of groupons sold - You can now see how many of each Groupon has been sold,
 if it is sold out, or how many more need to be purchased before getting the deal. 
-(grpn v1.2.0 & v1.3.0)
+(grpn v1.1.0 & v1.2.0)
 
 * Numerous bug fixes and small enhancements.
 
