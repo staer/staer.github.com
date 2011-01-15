@@ -223,6 +223,7 @@ button {  width: auto; overflow: visible; }
 body {
     background-color: #F5F5F5;
     font-size: 15px;
+    min-width: 800px;
 }
 
 h1 {
@@ -317,6 +318,46 @@ section#paginator {
     text-align: center;
 }
 
+#feed > article {
+    min-height: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#feed > article.email {
+    background-color: #DCF7DD;
+    background-image: url('/images/email.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 70px; 
+}
+
+#feed > article.twitter {
+    background-color: #99FFFF;
+    background-image: url('/images/twitter.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
+#feed > article.github {
+    background-color: #DCF7DD;
+    background-image: url('/images/github.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+}
+
+#feed > article.facebook {
+    background-color: #99FFFF;
+    background-image: url('/images/facebook.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
 
 
 

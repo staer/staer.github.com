@@ -1,9 +1,6 @@
-/* Author: 
+/* Author: Dan Harris
 
 */
-
-
-
 
 
 
