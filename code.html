@@ -1,0 +1,89 @@
+---
+layout: base
+title: Code
+---
+
+<section>
+	<article>
+		<header>extDate.js - Making JavaScript date parsing a snap</header>
+		<p>
+			One of the problems I encountered while working on my Groupon client
+			for WebOS was that parsing and displaying the dates found in the JSON
+			API feed got a bit messy. Lots of substring calls, and string 
+			concatenation in JavaScript. Being a Python programmer I wanted something
+			similar to strptime() and strftime() but for the JavaScript 'Date' object.
+			After doing some looking around the internet I couldn't find a good, 
+			light weight (suitable for mobile), implementation.
+		</p>
+		<p>
+			extDate.js is my re-implementation of Python's strptime() and strftime()
+			for the JavaScript 'Date' object. The implementation is a near 100% 
+			conversion of the Python methods save a few differences. A few other
+			features were added as well as the ability to localize content (output in spanish, etc).
+			See the included documentation for more information on how to use the 
+			extensions, the differences from Python's implementation, and the other
+			enhancements I made.
+		</p>
+		
+		<strong>Full source:</strong><a href="http://github.com/staer/extDate">http://github.com/staer/extDate</a>
+		
+	</article>
+	<article>
+		<header>grpn - A WebOS Groupon App</header>
+		<p>
+			Like many folks out there, I enjoy checking Groupon every once in a
+			while to see what kind of deals they have going for my area. One of the
+			things I noticed was that there was no good application for my mobile
+			platform of choice, WebOS. 
+		</p>
+		<p>
+			The API from Groupon looked simple enough and I had wanted to try out
+			coding something for WebOS so I wrote grpn, a very lightweight but
+			full functional Groupon client. The client makes use of the entire
+			Groupon API, allowing favorites, discussions, groupon says and more.
+			The app is open source and free of charge on the HP/Palm WebOS app catalog.
+		</p>
+		<br/>
+		<strong>App Store Download:</strong><a href="http://developer.palm.com/appredirect/?packageid=com.staersoft.grpn">http://developer.palm.com/appredirect/?packageid=com.staersoft.grpn</a>
+		<br/>
+		<strong>Full Source:</strong><a href="http://github.com/staer/grpn">http://github.com/staer/grpn</a>
+	</article>
+	
+	<article>
+		<header>A Biologically Inspired Focus of Attention Model</header>
+		<p>
+			I received my MS in Computer Science from the <a href="www.rit.edu">Rochester Institute of 
+		Technology</a> in January of 2008. I studied biologically inspired computer
+		vision with <a href="www.cs.rit.edu/~rsg">Dr. Roger Gaborski</a>, culminating
+		in my thesis about a biologically inspired visual attention model.
+		</p>
+		<br/>
+		<strong>Abstract</strong>
+		<p>
+			With high denition, high resolution, technology becoming ever more popular,
+			the vast amount of input available to modern object recognition systems can
+			become overwhelming. Given an image taken from a high resolution digital
+			camera, a target object may be very small in comparison to the entire image.
+			Additionally, any non-target objects in the input are considered unnecessary
+			data, or clutter. While many modern object recognition systems have been
+			created to be over 90% accurate in the recognition task, adding large amounts
+			of clutter to an input quickly degrades both the speed and accuracy of many
+			models.
+		</p>
+		<p>
+			To reduce both the size and amount of clutter in an input, a biologically
+			inspired focus of attention model is developed. Utilizing biologically inspired
+			feature extraction techniques, a feature based saliency model is built and used
+			to simulate the psychological concept of a \mental spotlight". The simulated
+			\mental spotlight" searches through each frame of a video, focusing on small
+			sub-regions of the larger input which are likely to contain important objects that
+			need to be processed in further detail. Each of these interesting sub-regions are
+			then able to be used as input by a modern object recognition system instead
+			of raw camera data, increasing both the speed and accuracy of the recognition
+			model.	
+		</p>
+		<br/>
+		<strong>Full Source:</strong> <a href="http://github.com/staer/MS-Thesis">http://github.com/staer/MS-Thesis</a>
+	</article>
+	
+</section>
