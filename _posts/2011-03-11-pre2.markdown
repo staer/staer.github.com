@@ -1,0 +1,24 @@
+---
+layout: post
+title: HP/Palm Pre2 Initial Impressions
+---
+
+A few weeks ago HP/Palm began a free developer device program for developers with apps in their catalog. I figured that I might as well apply since I have an app, 'grpn', in their catalog. Who knew, maybe I would get lucky and get another free device (I am previewing a ChromeOS netbook as well). A few weeks (and forms) later, a brand new developer unlocked Pre2 showed up at my door.
+
+**Hardware**
+
+At first glance the Pre2 is a lot like the original Pre, but a few things are definitely improved. First up the screen is now glass instead of plastic, this not only feels better to the touch, but looks much sleeker too. Second, the sliding mechanism feels much improved, it slides quite effortlessly without the feeling like I'm going to break something. Finally the keyboard is feels improved as well, it feels a bit more 'clicky' than the original Pre. The only real downside that I see to the hardware is that it just feels outdated. The internals on the phone are last years' specs and the phone feels quite 'thick'. I actually think it is thicker than my original Pre (not by much).
+
+**Setup**
+
+The Pre2 came with WebOS 2.0 on it, before even turning the device on I made sure to use a WebOS 2.1 doctor to update it. This went along fine without any hitches, just plugged in the phone and ran the doctor. It should be noted that I did have some problems getting the device up and running once WebOS 2.1 was installed. The device is looking for a sim card and HP/Palms instructions on how to get around this problem, while good, did not work exactly as instructed. The [instructions](http://developer.palm.com/index.php?option=com_content&view=article&id=2051) ask you to run a tool called "devicetool.jar" which unfortunately does not work out of the box for WebOS 2.1. It is missing a file which you have to manually append to the .jar file from the last 2.1 doctor. Instructions for how to do this can be found [here](http://developer.palm.com/distribution/viewtopic.php?f=91&t=9094#p47574).
+
+**Software**
+
+After finally getting the device up and running, I am now in WebOS 2.1 and it looks pretty great. The launcher is much improved, you can now have more than 3 pages of app screens as well as the ability to name them. Card stacks are pretty cool, and the device itself just feels zippy. I haven't had a chance to try out much, and because the device is developer unlocked I cannot get access to the app catalog. I did install Preware ASAP to get some additional software on the device. I will try out exhibition mode on my touchstone later today and maybe the voice features as well.
+
+**Conclusion**
+
+The Pre2 is a pretty nice device, it probably should have been released a year ago (on Sprint where most Pre users are, like me). Had they done this I totally would have upgraded. Alas, I don't think it is that great a device for "today". The Pre 3, with an increased screen size, faster processor, and hopefully overall thinner device will make a competitive phone for HP/Palm (if they ever release it). 
+
+![HP/Palm Pre2 w/ Box](/images/posts/pre2.jpg "HP/Palm Pre2")
